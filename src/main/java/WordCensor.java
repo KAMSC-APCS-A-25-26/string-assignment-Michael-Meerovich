@@ -8,7 +8,6 @@ public class WordCensor {
         // NOTE: Tests require exactly three asterisks (no ****) for every replacement
         String sentence, censored_dang, censored_nuts, censored_oops, censoredFull;
         Scanner sc = new Scanner(System.in);
-        System.out.print ("Enter a sentence: ");
         sentence = sc.nextLine();
         censored_dang = sentence.replace("dang", "***");
         censored_nuts = censored_dang.replace("nuts", "***");
