@@ -6,14 +6,18 @@ public class PalindromeChecker {
         //       Keep the original input string so you can print it in the final message.
         Scanner sc = new Scanner(System.in);
         String original, lowercase, reverse;
+        System.out.print ("Enter a word: ");
         original = sc.nextLine();
 
         // TODO: Build a lowercase version of the input for checking (case-insensitive comparison).
         //       (You don't need to remove spaces/punctuation for the current tests.)
-
+        lowercase = original.toLowerCase();
 
         // TODO: Determine whether the lowercase string reads the same forwards and backwards.
         //       Tip: compare it to a reversed copy of itself.
+        StringBuilder sb = new StringBuilder(lowercase);
+        sb.reverse();
+        reverse = sb.toString();
 
         // TODO: Treat single-character inputs as palindromes (the above check will already handle this).
 
@@ -21,5 +25,13 @@ public class PalindromeChecker {
         //       "<original> is a palindrome"
         //       "<original> is not a palindrome"
         //       where <original> is exactly what the user typed (preserve casing).
+        if (original.equalsIgnoreCase(reverse))
+        {
+            System.out.print (original + " is a palindrome");
+        }
+        else
+        {
+            System.out.print (original + " is not a palindrome");
+        }
     }
 }
