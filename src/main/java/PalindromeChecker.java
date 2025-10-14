@@ -10,10 +10,11 @@ public class PalindromeChecker {
 
         // TODO: Build a lowercase version of the input for checking (case-insensitive comparison).
         //       (You don't need to remove spaces/punctuation for the current tests.)
-
+        lowercase = original.toLowerCase();
 
         // TODO: Determine whether the lowercase string reads the same forwards and backwards.
         //       Tip: compare it to a reversed copy of itself.
+        //do a loop in order to reverse it
 
         // TODO: Treat single-character inputs as palindromes (the above check will already handle this).
 
