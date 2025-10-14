@@ -11,6 +11,6 @@ public class WordCensor {
         System.out.print ("Enter a sentence: ");
         sentence = sc.nextLine();
         censored = sentence.replace("dang", "***").replace("nuts", "***").replace("oops", "***").replace("yikes", "***");
-        System.out.print ("Censored: " + censored);
+        System.out.println ("Censored: " + censored);
     }
 }
